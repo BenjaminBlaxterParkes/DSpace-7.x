@@ -124,11 +124,11 @@ public class DiscoveryConfigurationService {
 
             }
 
-            System.out.println("Recently Added configuration:");
+            System.out.println("Recent submissions configuration:");
             DiscoveryRecentSubmissionsConfiguration recentSubmissionConfiguration = discoveryConfiguration
                 .getRecentSubmissionConfiguration();
             System.out.println("\tMetadata sort field: " + recentSubmissionConfiguration.getMetadataSortField());
-            System.out.println("\tMax Recently Added: " + recentSubmissionConfiguration.getMax());
+            System.out.println("\tMax recent submissions: " + recentSubmissionConfiguration.getMax());
 
             List<String> defaultFilterQueries = discoveryConfiguration.getDefaultFilterQueries();
             if (0 < defaultFilterQueries.size()) {
